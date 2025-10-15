@@ -9,11 +9,10 @@
         var btn = document.getElementById('compatBtn');
         function compatClick() { alert('Compatible!'); }
         
-        // Check for support
         if (window.addEventListener) {
-            btn.addEventListener('click', compatClick); // Modern browsers
+            btn.addEventListener('click', compatClick); 
         } else if (window.attachEvent) {
-            btn.attachEvent('onclick', compatClick); // Legacy IE (<9)
+            btn.attachEvent('onclick', compatClick); 
         }
     </script>
 </body>

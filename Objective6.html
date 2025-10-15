@@ -7,11 +7,9 @@
     <button id="a">Click for Multiple</button>
     <script>
         var element = document.getElementById('a');
-        // This overwrites the previous onclick
         element.onclick = function() { alert('First!'); };
-        element.onclick = function() { alert('Second!'); }; // Only this one will run
+        element.onclick = function() { alert('Second!'); }; 
         
-        // These both work (multiple)
         element.addEventListener('click', function() { alert('Third!'); });
         element.addEventListener('click', function() { alert('Fourth!'); });
     </script>
